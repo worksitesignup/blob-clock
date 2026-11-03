@@ -1,0 +1,10 @@
+#!/bin/sh
+# Install (or update) the KWin script that lets the clock's eyes follow the mouse.
+set -e
+DIR="$(cd "$(dirname "$0")" && pwd)"
+TOOL=$(command -v kpackagetool6 || command -v kpackagetool5 || true)
+[ -n "$TOOL" ] || { echo "kpackagetool6 not found (needs KDE Plasma)"; exit 1; }
+"$TOOL" --type KWin/Script -i "$DIR/kwin-gaze" 2>/dev/null || "$TOOL" --type KWin/Script -u "$DIR/kwin-gaze"
+kwriteconfig6 --file kwinrc --group Plugins --key tiger-clock-gazeEnabled true 2>/dev/null || true
+qdbus6 org.kde.KWin /KWin reconfigure 2>/dev/null || dbus-send --session --dest=org.kde.KWin /KWin org.kde.KWin.reconfigure 2>/dev/null || true
+echo "Installed. If the eyes don't follow the mouse, enable 'Jelly Clock Gaze' in System Settings > Window Management > KWin Scripts."
