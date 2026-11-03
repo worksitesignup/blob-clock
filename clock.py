@@ -1,4 +1,4 @@
-"""Floating jelly clock widget.
+"""Floating blob clock widget.
 
 A round, water-balloon-soft glass bubble on the desktop holding a gel clock face
 (hour, minute and second hands, 12h) full of eyes: one at the hub and one at
@@ -105,7 +105,7 @@ class Spring:
 
 class Clock(Gtk.Window):
     def __init__(self):
-        super().__init__(title="Jelly Clock")
+        super().__init__(title="Blob Clock")
         self.cfg = load_config()
         self.R = float(self.cfg["radius"])
         self.W = self.H = int(2 * (self.R + PAD))

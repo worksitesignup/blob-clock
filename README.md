@@ -1,4 +1,4 @@
-# Jelly Clock
+# Blob Clock
 
 A floating, water-balloon-soft glass clock for Wayland desktops (layer-shell), drawn with cairo/GTK3.
 
@@ -22,7 +22,7 @@ Wayland apps can't see the pointer outside their own window, so a tiny KWin scri
 ```sh
 ./install-kwin-script
 ```
-If the eyes still don't track, enable **Jelly Clock Gaze** in *System Settings → Window Management → KWin Scripts*.
+If the eyes still don't track, enable **Blob Clock Gaze** in *System Settings → Window Management → KWin Scripts*.
 
 ## Settings
 Position is remembered in `config.json` (created on first move). You can also set:

@@ -1,4 +1,4 @@
-// Send the global cursor position to the jelly clock (org.tiger.Clock) over D-Bus,
+// Send the global cursor position to the blob clock (org.tiger.Clock) over D-Bus,
 // at most ~30 times a second and only while the mouse moves. Nothing runs at rest.
 var last = 0;
 var pending = false;

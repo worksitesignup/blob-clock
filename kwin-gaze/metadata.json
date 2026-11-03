@@ -1,8 +1,8 @@
 {
     "KPlugin": {
         "Id": "tiger-clock-gaze",
-        "Name": "Jelly Clock Gaze",
-        "Description": "Tells the jelly clock where the mouse is, so its eye can follow it.",
+        "Name": "Blob Clock Gaze",
+        "Description": "Tells the blob clock where the mouse is, so its eye can follow it.",
         "Version": "1.0",
         "License": "MIT",
         "EnabledByDefault": true

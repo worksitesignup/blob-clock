@@ -7,4 +7,4 @@ TOOL=$(command -v kpackagetool6 || command -v kpackagetool5 || true)
 "$TOOL" --type KWin/Script -i "$DIR/kwin-gaze" 2>/dev/null || "$TOOL" --type KWin/Script -u "$DIR/kwin-gaze"
 kwriteconfig6 --file kwinrc --group Plugins --key tiger-clock-gazeEnabled true 2>/dev/null || true
 qdbus6 org.kde.KWin /KWin reconfigure 2>/dev/null || dbus-send --session --dest=org.kde.KWin /KWin org.kde.KWin.reconfigure 2>/dev/null || true
-echo "Installed. If the eyes don't follow the mouse, enable 'Jelly Clock Gaze' in System Settings > Window Management > KWin Scripts."
+echo "Installed. If the eyes don't follow the mouse, enable 'Blob Clock Gaze' in System Settings > Window Management > KWin Scripts."
