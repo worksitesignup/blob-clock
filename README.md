@@ -1,5 +1,9 @@
 # Blob Clock
 
+[![Blob Clock demo](media/blob-clock.gif)](media/blob-clock.mp4)
+
+*Click the preview for the full video with sound.*
+
 A floating, water-balloon-soft glass clock for Wayland desktops (layer-shell), drawn with cairo/GTK3.
 
 The face is a gel full of eyes — one at the hub and one at each hour tip — that glance around, blink, and follow your mouse. Drag it and throw it: it keeps its momentum, squashes against the screen edges and wobbles. Click to jiggle it, right-click to poke it. Bounces make soft rubbery sounds.
